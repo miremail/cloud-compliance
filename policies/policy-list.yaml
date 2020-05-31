@@ -1,0 +1,33 @@
+policies:
+
+- cloud-provider: Amazon
+
+  - short-name: aws-snapshot-public
+    long-name: AWS EBS snapshots are public
+    
+  - short-name: aws-ami-public
+    long-name: AWS AMI images are public
+    
+  - short-name: aws-clodtrail-logging-not-enabled-or-not-multiregion
+    long-name: AWS Cloudtrail service is not enabled for the account or is not enabled in all regions
+    
+  - short-name: vpc-flow-logs-not-enabled
+    long-name: AWS VPC Flow Logs are not enabled
+    
+  - short-name: ec2-public-ips
+    long-name: AWS EC2 instances are assigned public IPs
+  
+  - short-name: security-groups-open-to-world
+    long-name: AWS Security Groups are open to the public network
+    
+  - short-name: iam-non-mfa-console-users
+    long-name: AWS IAM user with console access do not have MFA
+    
+  - short-name: s3-no-encryption
+    long-name: AWS S3 buckets are not encrypted
+    
+  - short-name: s3-non-website-public
+    long-name: AWS S3 buckets are not configured as websites and have public access
+    
+    
+  
